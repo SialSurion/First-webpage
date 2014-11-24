@@ -1,4 +1,4 @@
-* {
+body {
     font-family: Calibri;
 }
 
@@ -7,7 +7,7 @@ div {
     border: 2.5px;
 }
 
-#header {
+.header {
     position: fixed;
     z-index: 1;
     height: 75px;
@@ -17,7 +17,7 @@ div {
     margin-bottom: 3px;
 }
 
-#footer {
+.footer {
     position: relative;
     height: 75px;
     width: 100%;
@@ -25,12 +25,25 @@ div {
     clear: both;
 }
 
+.right::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	background: url("http://i113.photobucket.com/albums/n219/AraxTex/kfiaty.jpg") top left;
+	background-size: 100% 100%;
+	opacity: 0.7;
+	border-radius: 15px;
+    border: 2.5px;
+}
 .right {
     position: relative;
     float: right;
     height: 750px;
     width: 84.5%;
-    background-color: #FFFF66;
     margin-bottom: 3px;
     margin-top: 53px;
 }
@@ -44,33 +57,56 @@ div {
     margin-top: 53px;
 }
 
-#name {
-	float:left;
-	margin-left: 20px;
-	padding-top: 10px;
-	font-size: 20px;
+.name {
+	float: left;
+	margin-left: 35px;
+	font-size: 30px;
 	font-family: Candara, Verdana, sans-serif;
 }
 
 a {
     float: right;
-	margin-right: 20px;
-	padding-top: 10px;
+	margin-right: 35px;
+	padding-top: 1%;
 	font-size: 20px;
 	font-family: Candara, Verdana, sans-serif;
 }
 
-#special {
+.special {
     text-align: center;
     padding-top: 10px;
 }
 
-#thank {
+.thank {
     text-align: center;
     padding-bottom: 10px;
 }
 
 h4 {
     padding-left:15px;
+}
+.img {
+    height: 750px;
+    width: 84.5%;
+}
+
+.mailto:link {
+    text-decoration: none;
+	color: #c00;
+}
+
+.mailto:visited {
+    text-decoration: none;
+	color: #0c0;
+}
+
+.mailto:hover {
+    text-decoration: none;
+	color: #00C;
+}
+
+.mailto:active {
+    text-decoration: none;
+	color: #CCC;
 }
 
